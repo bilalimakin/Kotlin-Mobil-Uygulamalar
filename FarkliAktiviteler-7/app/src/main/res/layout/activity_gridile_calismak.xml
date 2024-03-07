@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridileCalismak">
+
+    <LinearLayout
+        android:id="@+id/gridMenuUst"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="?attr/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="KPSS - DERSLER"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridMenuAlt"
+        app:layout_constraintEnd_toEndOf="@+id/gridMenuUst"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/gridMenuUst"
+        app:layout_constraintTop_toBottomOf="@+id/gridMenuUst"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- İlk sütun, ilk satır -->
+        <TextView
+            android:id="@+id/kpssTurkce"
+            android:text="KPSS - TÜRKÇE"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/kpssMatematik"
+            android:text="KPSS - MATEMATİK"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/kpssTarih"
+            android:text="KPSS - TARİH"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:onClick="kpssTarihGit"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/kpssCografya"
+            android:text="KPSS - COĞRAFYA"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/kpssVatandaslik"
+            android:text="KPSS - VATANDAŞLIK"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            ></TextView>
+
+        <!--<ImageView
+            android:id="@+id/osym50"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5dp"
+            app:srcCompat="@drawable/osym" />-->
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/gridMenuAlt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimaryDark"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

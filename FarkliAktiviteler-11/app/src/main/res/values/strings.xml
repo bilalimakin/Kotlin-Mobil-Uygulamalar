@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FarkliAktiviteler</string>
+    <string name="etut_kayit">E-tüt KAYIT</string>
+    <string name="user_name">User Name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+    <string name="girisyap">Get Started</string>
+    <string name="test">Test</string>
+</resources>

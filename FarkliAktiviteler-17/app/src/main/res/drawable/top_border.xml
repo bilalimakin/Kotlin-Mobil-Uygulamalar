@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Üst kenar için bir çizgi -->
+    <item android:left="-0.5dp" android:right="-0.5dp" android:top="-0.5dp" android:bottom="0.5dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="0.5dp" android:color="#B6C0C1"/> <!-- #ecf0f1 olarak renk belirlendi -->
+        </shape>
+    </item>
+</layer-list>

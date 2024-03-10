@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigasiyon_graph"
+    app:startDestination="@id/firstFragman">
+
+    <fragment
+        android:id="@+id/firstFragman"
+        android:name="com.example.farkliaktiviteler.FirstFragman"
+        android:label="fragment_first_fragman"
+        tools:layout="@layout/fragment_first_fragman" >
+        <action
+            android:id="@+id/action_firstFragman_to_secondFragman"
+            app:destination="@id/secondFragman" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragman"
+        android:name="com.example.farkliaktiviteler.SecondFragman"
+        android:label="fragment_second_fragman"
+        tools:layout="@layout/fragment_second_fragman" >
+        <action
+            android:id="@+id/action_secondFragman_to_firstFragman"
+            app:destination="@id/firstFragman" />
+        <argument
+            android:name="username"
+            app:argType="string"
+            android:defaultValue="Bilal" />
+    </fragment>
+</navigation>

@@ -1,0 +1,8 @@
+<!-- border_gray.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <stroke
+        android:width="1dp"
+        android:color="#808080" /> <!-- Gri kenarlık, burada renk kodunu istediğiniz gibi ayarlayabilirsiniz -->
+    <corners android:radius="5dp" /> <!-- Köşeleri yuvarlak hale getirme (isteğe bağlı) -->
+</shape>
